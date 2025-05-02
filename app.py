@@ -5,9 +5,9 @@ import math
 
 # 品牌退稅比例設定 (品牌: 退稅後價格比例)
 brand_tax = {
-    "CHANEL": 0.93,
+    "CHANEL": 0.94,
     "LV": 0.94,
-    "HERMES": 0.93,
+    "HERMES": 0.94,
     "DIOR": 0.87,
     "CELINE": 0.87,
     "GUCCI": 0.87,
