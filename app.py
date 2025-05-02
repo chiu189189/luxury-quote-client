@@ -46,7 +46,7 @@ if st.button("計算報價"):
     total_euro = price_after_tax + shipping
     rate = 36.5  # 匯率您可自行變更此值
     tw_cost = total_euro * rate
-    final_price = math.ceil(tw_cost + profit)
+    final_price = math.ceil((tw_cost + profit) / 100) * 100
 
     st.subheader("報價結果")
     st.success(f"{brand} 報價：NT$ {final_price:,}")
