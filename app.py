@@ -4,9 +4,9 @@ import math
 
 # 品牌退稅比例設定
 brand_tax = {
-    "CHANEL": 0.93,
+    "CHANEL": 0.94,
     "LV": 0.94,
-    "HERMES": 0.93,
+    "HERMES": 0.94,
     "DIOR": 0.87,
     "CELINE": 0.87,
     "GUCCI": 0.87,
@@ -29,7 +29,7 @@ if st.button("計算報價"):
     price_after_tax = euro_price * tax_rate
     shipping = 10 if euro_price < 3000 else 20
     total_euro = price_after_tax + shipping
-    rate = 35.0  # 匯率固定（不顯示）
+    rate = 36.0  # 匯率固定（不顯示）
     tw_cost = total_euro * rate
     profit = 1000 if euro_price < 3000 else 3000
     final_price = int(tw_cost + profit)
