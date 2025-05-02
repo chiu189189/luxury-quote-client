@@ -45,7 +45,7 @@ elif euro_price < 1000:
 elif euro_price <= 1500:
     profit = 3000
 else:
-    profit = 3000
+    profit = 3500
 
     total_euro = price_after_tax + shipping
     rate = 36.5  # 匯率您可自行變更此值
