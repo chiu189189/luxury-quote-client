@@ -17,8 +17,8 @@ brand_tax = {
     "其他": 1.0
 }
 
-st.set_page_config(page_title="批客報價系統", layout="centered")
-st.title("📦 批客報價系統")
+st.set_page_config(page_title="批發報價系統", layout="centered")
+st.title("📦 批發報價系統")
 
 brand = st.selectbox("選擇品牌", list(brand_tax.keys()))
 euro_price = st.number_input("輸入商品歐元原價", min_value=0, value=0, step=10)
@@ -41,7 +41,7 @@ if st.button("計算報價"):
     elif euro_price <= 1500:
         profit = 3000
     else:
-        profit = 4000
+        profit = 3000
 
     total_euro = price_after_tax + shipping
     rate = 36.5  # 匯率您可自行變更此值
