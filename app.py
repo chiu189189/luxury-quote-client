@@ -38,13 +38,13 @@ if st.button("計算報價"):
     # 利潤邏輯
     if euro_price < 600:
     profit = 1000
-elif euro_price < 800:
+    elif euro_price < 800:
     profit = 2000
-elif euro_price < 1000:
+    elif euro_price < 1000:
     profit = 2500
-elif euro_price <= 1500:
+    elif euro_price <= 1500:
     profit = 3000
-else:
+    else:
     profit = 3500
 
     total_euro = price_after_tax + shipping
