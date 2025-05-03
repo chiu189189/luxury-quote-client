@@ -5,7 +5,7 @@ st.set_page_config(page_title="📦 批發報價系統", layout="centered")
 st.title("📦 批發報價系統")
 
 # 品牌選單
-brands = ["CHANEL", "Louis Vuitton", "HERMES", "DIOR", "CELINE", "GUCCI", "YSL", "LOEWE", "BURBERRY", "CHLOÉ", "BALENCIAGA", "其他"]
+brands = ["CHANEL", "Louis Vuitton", "HERMES", "DIOR", "CELINE", "GUCCI", "YSL", "LOEWE", "BURBERRY", "CHLOÉ", "MIU MIU","BALENCIAGA", "其他"]
 
 brand = st.selectbox("選擇品牌", brands)
 euro_price = st.number_input("輸入商品歐元原價", min_value=0, step=1)
