@@ -12,9 +12,9 @@ euro_price = st.number_input("輸入商品歐元原價", min_value=0, step=1)
 
 if st.button("計算報價"):
     res = requests.post(
-        "https://luxury-quote-api-igintwkykzdcix7ry3rwkj.onrender.com/calculate",  # 請用 Render 的 API 網址
-        json={"brand": brand, "euro_price": euro_price}
-    )
+    "https://luxury-quote-api.onrender.com/calculate",
+    json={"brand": brand, "euro_price": euro_price}
+)
 
     if res.status_code == 200:
         data = res.json()
